@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,700');
+body {
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100vh;
+}
+header {
+  background: #ffffff;
+}
+header .header-documentTitle {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 20px 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .header-actions {
+  display: flex;
+  height: 43px;
+}
+header .header-actions .header-actions--item {
+  padding: 0px 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease all;
+}
+header .header-actions .header-actions--item .mdi {
+  font-size: 20px;
+}
+header .header-actions .header-actions--item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  cursor: pointer;
+}
+header .header-actions .header-actions--space {
+  flex: 1;
+}
+nav {
+  background: #F1F1F1;
+  display: flex;
+  height: 43px;
+}
+nav .nav--item {
+  padding: 0px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease all;
+}
+nav .nav--item .mdi {
+  font-size: 20px;
+}
+nav .nav--item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  cursor: pointer;
+}
+nav .nav--spacer {
+  width: 1px;
+  height: calc(100% - 20px);
+  background: rgba(0, 0, 0, 0.25);
+  margin: 10px 5px;
+}
+nav .nav--space {
+  flex: 1;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  overflow: hidden;
+}
+main .editor {
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+main .editor textarea {
+  border: 0;
+  resize: none;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.15em;
+  font-family: monospace;
+}
+main .editor textarea:focus {
+  outline: 0;
+}
+main .handler {
+  background: #f1f1f1;
+  cursor: col-resize;
+}
+main .preview {
+  padding: 25px;
+  overflow-y: scroll;
+}
+main .preview h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+main .preview h2 {
+  font-size: 1.75em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+main .preview h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+main .preview h4 {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+}
+main .preview h5 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main .preview h6 {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main .preview p {
+  padding: 10px 0px;
+  line-height: 1.5em;
+}
+main .preview blockquote {
+  padding: 15px;
+  border-left: 2px solid orange;
+}
+main .preview code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 8px;
+  font-size: 14px;
+}
+main .preview pre {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+main .preview pre code {
+  background: transparent;
+}

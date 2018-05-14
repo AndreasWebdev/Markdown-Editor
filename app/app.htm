@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Markdown Editor</title>
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="assets/css/reset.css" />
+      <link rel="stylesheet" href="assets/css/icons.css" />
+      <link rel="stylesheet" href="assets/css/app.css" />
+    </head>
+    <body>
+      <header>
+        <div class="header-documentTitle">Unnamed Document</div>
+
+        <div class="header-actions">
+          <div class="header-actions--item" tabindex="-1">File</div>
+          <div class="header-actions--item" tabindex="-1">Edit</div>
+          <div class="header-actions--item" tabindex="-1">View</div>
+          <div class="header-actions--item" tabindex="-1">Format</div>
+          <div class="header-actions--item" tabindex="-1">Insert</div>
+          <div class="header-actions--item" tabindex="-1">Tools</div>
+
+          <div class="header-actions--space"></div>
+
+          <div class="header-actions--item" tabindex="-1">
+            <i class="mdi mdi-dots-vertical"></i>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-save"></i></div>
+
+        <div class="nav--spacer"></div>
+
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-cut"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-copy"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-paste"></i></div>
+
+        <div class="nav--spacer"></div>
+
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-bold"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-italic"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-underline"></i></div>
+
+        <div class="nav--spacer"></div>
+
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-title"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-pilcrow"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-list-bulleted-type"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-list-numbers"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-format-quote-close"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-minus"></i></div>
+        <div class="nav--item" tabindex="-1"><i class="mdi mdi-table"></i></div>
+      </nav>
+
+      <main>
+        <div class="editor">
+          <textarea></textarea>
+        </div>
+
+        <div class="handler"></div>
+
+        <div class="preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </main>
+
+      <script src="assets/js/app.js"></script>
+    </body>
+  </html>

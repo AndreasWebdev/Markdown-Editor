@@ -1,0 +1,16 @@
+{
+  "name": "mde",
+  "version": "1.0.0",
+  "description": "Markdown Editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "StudioNameHere",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.0",
+    "showdown": "^1.8.6"
+  }
+}
