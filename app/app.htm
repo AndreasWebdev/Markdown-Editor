@@ -14,29 +14,61 @@
         <div class="header-documentTitle">Unnamed Document</div>
 
         <div class="header-actions">
-          <div class="header-actions--item" tabindex="-1">File</div>
-          <div class="header-actions--item" tabindex="-1">Edit</div>
-          <div class="header-actions--item" tabindex="-1">View</div>
-          <div class="header-actions--item" tabindex="-1">Format</div>
-          <div class="header-actions--item" tabindex="-1">Insert</div>
-          <div class="header-actions--item" tabindex="-1">Tools</div>
+          <div class="header-actions--item" tabindex="-1">
+            <div class="header-actions-item-title">File</div>
+            <div class="header-actions-item-dropdown">
+              <ul>
+                <li>New</li>
+                <li>Open</li>
+                <li>Save</li>
+                <li>Save as...</li>
+                <li class="spacer"></li>
+                <li class="ui-action-file-exit">Exit</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-actions--item" tabindex="-1">
+            <div class="header-actions-item-title">View</div>
+            <div class="header-actions-item-dropdown">
+              <ul>
+                <li class="ui-action-view-split">Split View</li>
+                <li class="ui-action-view-preview">Preview</li>
+                <li class="ui-action-view-text">Text</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-actions--item" tabindex="-1">
+            <div class="header-actions-item-title">Insert</div>
+            <div class="header-actions-item-dropdown">
+              <ul>
+                <li>Heading</li>
+                <li>Paragraph</li>
+                <li>Unordered list</li>
+                <li>Ordered list</li>
+                <li>Blockquote</li>
+                <li>Code</li>
+                <li>Table</li>
+                <li>Horizontal line</li>
+              </ul>
+            </div>
+          </div>
 
           <div class="header-actions--space"></div>
 
           <div class="header-actions--item" tabindex="-1">
-            <i class="mdi mdi-dots-vertical"></i>
+            <div class="header-actions-item-title"><i class="mdi mdi-dots-vertical"></i></div>
+            <div class="header-actions-item-dropdown header-actions-item-dropdown--right">
+              <ul>
+                <li>Settings</li>
+                <li>About</li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
 
       <nav>
         <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-save"></i></div>
-
-        <div class="nav--spacer"></div>
-
-        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-cut"></i></div>
-        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-copy"></i></div>
-        <div class="nav--item" tabindex="-1"><i class="mdi mdi-content-paste"></i></div>
 
         <div class="nav--spacer"></div>
 
@@ -63,7 +95,6 @@
         <div class="handler"></div>
 
         <div class="preview">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </main>
 

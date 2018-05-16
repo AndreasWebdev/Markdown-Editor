@@ -21,20 +21,57 @@ header .header-actions {
   height: 43px;
 }
 header .header-actions .header-actions--item {
+  position: relative;
   padding: 0px 20px;
-  color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.2s ease all;
 }
-header .header-actions .header-actions--item .mdi {
+header .header-actions .header-actions--item .header-actions-item-title {
+  color: rgba(0, 0, 0, 0.7);
+}
+header .header-actions .header-actions--item .header-actions-item-title .mdi {
   font-size: 20px;
 }
 header .header-actions .header-actions--item:hover {
   background: rgba(0, 0, 0, 0.05);
   color: #000;
   cursor: pointer;
+}
+header .header-actions .header-actions--item:focus {
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+header .header-actions .header-actions--item .header-actions-item-dropdown {
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  width: 250px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+header .header-actions .header-actions--item .header-actions-item-dropdown ul li:not(.spacer) {
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .header-actions .header-actions--item .header-actions-item-dropdown ul li:not(.spacer):hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  cursor: pointer;
+}
+header .header-actions .header-actions--item .header-actions-item-dropdown ul li.spacer {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 5px 0px;
+}
+header .header-actions .header-actions--item .header-actions-item-dropdown.header-actions-item-dropdown--right {
+  left: -190px;
+}
+header .header-actions .header-actions--item:focus > .header-actions-item-dropdown {
+  display: block;
 }
 header .header-actions .header-actions--space {
   flex: 1;
@@ -147,4 +184,17 @@ main .preview pre {
 }
 main .preview pre code {
   background: transparent;
+}
+main .preview ul {
+  list-style-type: disc;
+  padding: 5px 25px;
+  line-height: 1.5;
+}
+main .preview ol {
+  list-style-type: decimal;
+  padding: 5px 25px;
+  line-height: 1.5;
+}
+main .preview img {
+  max-width: 100%;
 }
